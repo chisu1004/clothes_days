@@ -1,0 +1,115 @@
+<!-- 설정창 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/some_id"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/set">
+    <!-- 설정아이콘 -->
+    <View
+        android:id="@+id/set_set_icon"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/option_set"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+     설정
+
+    <TextView
+        android:id="@+id/set_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="4dp"
+        android:gravity="top"
+        android:text="설정"
+        android:textAppearance="@style/set_words"
+        app:layout_constraintStart_toEndOf="@+id/set_set_icon"
+        app:layout_constraintTop_toTopOf="@+id/set_set_icon" />
+    <!--    &lt;!&ndash; 검색아이콘 &ndash;&gt;-->
+<!--    <View-->
+<!--        android:id="@+id/search"-->
+<!--        android:layout_width="21dp"-->
+<!--        android:layout_height="22dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="107dp"-->
+<!--        android:background="@drawable/option_search" />-->
+
+
+    <Button
+        android:id="@+id/option_myinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="84dp"
+        android:text="내정보"
+        android:gravity="start"
+        android:background="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAppearance="@style/option_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_set_icon" />
+
+
+    <Button
+        android:id="@+id/option_notice"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="start"
+        android:text="알림"
+        android:visibility="gone"
+        android:layout_marginTop="41dp"
+        android:textAppearance="@style/option_text"
+        app:layout_constraintStart_toStartOf="@+id/option_security"
+        app:layout_constraintTop_toBottomOf="@+id/option_security" />
+
+    <Button
+        android:id="@+id/option_security"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@color/white"
+        android:gravity="start"
+
+        android:text="보안"
+        android:textAppearance="@style/option_text"
+        app:layout_constraintStart_toStartOf="@+id/option_myinfo"
+        app:layout_constraintTop_toBottomOf="@+id/option_myinfo" />
+
+
+
+
+    <View
+        android:id="@+id/option_line6"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="238dp"
+        android:background="@drawable/option_line6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_security" />
+
+    <Button
+        android:id="@+id/set_logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/white"
+        android:layout_marginTop="34dp"
+        android:gravity="top"
+        android:text="로그아웃"
+        android:textAppearance="@style/logout"
+        app:layout_constraintStart_toStartOf="@+id/option_security"
+        app:layout_constraintTop_toBottomOf="@+id/option_line6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

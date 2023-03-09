@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="appName">
+        <item name="android:textSize">
+            22dp
+        </item>
+        <item name="android:textColor">
+            #646CB7
+        </item>
+    </style>
+
+    <style name="app_name">
+        <item name="android:textSize">
+            22dp
+        </item>
+        <item name="android:textColor">
+            #646CB7
+        </item>
+    </style>
+    <style name="login">
+        <item name="android:textSize">
+            30dp
+        </item>
+        <item name="android:textColor">
+            #CC646CB7
+        </item>
+    </style>
+
+    <style name="find">
+        <item name="android:textSize">
+            15dp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="login_btn">
+        <item name="android:textSize">
+            32dp
+        </item>
+        <item name="android:textColor">
+            #FEF8F8
+        </item>
+
+    </style>
+    <style name="today_coordi">
+        <item name="android:textSize">
+            18dp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="loading_first_app_name">
+        <item name="android:textSize">
+            50dp
+        </item>
+        <item name="android:textColor">
+            #FDFDFF
+        </item>
+    </style>
+    <style name="find_id">
+        <item name="android:textSize">
+            28dp
+        </item>
+        <item name="android:textColor">
+            #CC646CB7
+        </item>
+    </style>
+
+    <style name="find_id_name">
+        <item name="android:textSize">
+            18dp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="find_id_phone">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="find_btn_text">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+
+    <style name="signup">
+
+        <item name="android:textSize">
+            25dp
+        </item>
+
+        <item name="android:textColor">
+            #CC646CB7
+        </item>
+
+    </style>
+
+    <style name="signup_text">
+
+        <item name="android:textSize">
+            17dp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #A6000000
+        </item>
+
+    </style>
+
+    <style name="signup_id_check">
+
+        <item name="android:textSize">
+            14dp
+        </item>
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+
+    </style>
+
+    <style name="signup_id_check_text">
+
+        <item name="android:textSize">
+            14dp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #A62D5E07
+        </item>
+
+    </style>
+
+    <style name="signup_btn">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="main_style_recommend_text">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <style name="reg_text">
+
+        <item name="android:textSize">
+            21dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <style name="reply_reg_text">
+
+        <item name="android:textSize">
+            17dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+
+
+    <style name="bottom_btn">
+        <item name="android:textSize">
+            14dp
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="main_home_words">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <!-- styles.xml -->
+    <style name="main_chat_words">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_post_words">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_scrap_words">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_mypage_words">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <!-- styles.xml -->
+    <style name="main_tdweather_words">
+
+        <item name="android:textSize">
+            27dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_words1">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_update_date1">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_update_date2">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_update_date3">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <style name="post_profile_words">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_comment_words">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_update_date1">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_contents_words">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #272D2E
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_contents_tag">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #8C8282
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_like_number">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="post_best_post">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_profile_words1">
+
+        <item name="android:textSize">
+            17dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="best_pnumber1">
+
+        <item name="android:textSize">
+            23dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_profile_words2">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="best_pnumber2">
+
+        <item name="android:textSize">
+            25dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_profile_words3">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="best_pnumber3">
+
+        <item name="android:textSize">
+            25dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_profile_words4">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="best_pnumber4">
+
+        <item name="android:textSize">
+            25dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_profile_words5">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="best_pnumber5">
+
+        <item name="android:textSize">
+            25dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="post_profile_words6">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="best_pnumber6">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="dpring_update_date">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_counsel">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="logout">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <style name="set_words">
+
+        <item name="android:textSize">
+            30dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_text">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <!-- styles.xml -->
+
+    <!-- styles.xml -->
+    <style name="option_profile_name">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="option_myinquiry">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_myinquiry_collection">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #CC000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_withdrawal_words">
+
+        <item name="android:textSize">
+            12dp
+        </item>
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_withdrawal">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_intro_words">
+
+        <item name="android:textSize">
+            30dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_app_update">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_data_policy">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <!-- styles.xml -->
+    <style name="option_terms_of_service">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_opensource_lib">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_notice_words">
+
+        <item name="android:textSize">
+            30dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_allstop">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_on_off">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_post_chat">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_chat">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_follow_following">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_others_notice">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_email_notice">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_setprotect_words">
+
+        <item name="android:textSize">
+            30dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_private_account">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_activity">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_public_private">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_post">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_comment">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_connect_account">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_block_account">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_follow_account">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_theme_words">
+
+        <item name="android:textSize">
+            30dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_light_mode">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_dark_mode">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_help_words">
+
+        <item name="android:textSize">
+            30dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_myinquiry2">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="option_Service_center">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+    <!-- styles.xml -->
+    <style name="option_protect_help">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="menu_profile_name">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="menu_email">
+
+        <item name="android:textSize">
+            10dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="menu_alarm">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="main_post2">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #132565
+        </item>
+
+    </style>
+    <!-- styles.xml -->
+    <style name="menu_season_words">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #132565
+        </item>
+
+    </style>
+
+    <style name="menu_words1">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #132565
+        </item>
+
+    </style>
+
+    <style name="find_result_find_id_text">
+
+        <item name="android:textSize">
+            27dp
+        </item>
+
+        <item name="android:textColor">
+            #CC646CB7
+        </item>
+
+    </style>
+
+    <style name="find_result_result">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="profile_name">
+
+        <item name="android:textSize">
+            21dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <!-- 내 게시물.xml -->
+    <style name="mypage_my_post_word">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <!-- 내 게시물.xml -->
+    <style name="mypage_my_post_words">
+
+        <item name="android:textSize">
+            12dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <!-- 내 게시물.xml -->
+    <style name="mypage_my_scrap_words">
+
+        <item name="android:textSize">
+            12dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <!-- 내 게시물.xml -->
+    <style name="mypage_my_scrap_word">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <style name="mypage_my_like_word">
+
+        <item name="android:textSize">
+            12dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="mypage_follow">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+
+
+
+    <style name="mypage_following_word">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="mypage_tag">
+
+        <item name="android:textSize">
+            11dp
+        </item>
+
+        <item name="android:textColor">
+            #8C8282
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="mypage_tag2">
+
+        <item name="android:textSize">
+            11dp
+        </item>
+
+        <item name="android:textColor">
+            #8C8282
+        </item>
+
+    </style>
+
+    <style name="post_management_button_text">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #49595B
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="noticeboard_profile_words">
+
+        <item name="android:textSize">
+            17dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="noticeboard_recommend">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #CC646CB7
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="recent_searches_word">
+
+        <item name="android:textSize">
+            23dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="recommend1_word">
+
+        <item name="android:textSize">
+            17dp
+        </item>
+
+        <item name="android:textColor">
+            #B3000000
+        </item>
+
+    </style>
+
+    <style name="set_secure_psw">
+
+        <item name="android:textSize">
+            20dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="reply_show_text">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <style name="like_text">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #8AA0A4
+        </item>
+
+    </style>
+
+    <style name="reply_content">
+
+        <item name="android:textSize">
+            19dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="category_text_inactive">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #B3646CB7
+        </item>
+
+    </style>
+
+    <style name="category_text_active">
+
+        <item name="android:textSize">
+            32dp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="reply_activity_reply_text">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #DE000000
+        </item>
+
+    </style>
+
+    <style name="bottom_active">
+
+        <item name="android:textSize">
+            12dp
+        </item>
+
+        <item name="android:textColor">
+            #DE4169E1
+        </item>
+
+    </style>
+
+    <style name="set_my_info_text">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="set_my_info_save_button">
+
+        <item name="android:textSize">
+            18dp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="follow_btn">
+
+        <item name="android:textSize">
+            16dp
+        </item>
+
+        <item name="android:textColor">
+            #914FC6
+        </item>
+
+    </style>
+
+    <!-- styles.xml -->
+    <style name="app_notice">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+
+    <style name="notice_comments1">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+
+    </style>
+
+
+    <style name="follow_notice">
+
+        <item name="android:textSize">
+            24dp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+
+    <style name="follow_comments">
+
+        <item name="android:textSize">
+            15dp
+        </item>
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+
+    </style>
+
+
+
+
+
+</resources>

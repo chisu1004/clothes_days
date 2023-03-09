@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1048664151833",
+    "project_id": "clothesday-670e9",
+    "storage_bucket": "clothesday-670e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048664151833:android:fd744619d75357ec8e1788",
+        "android_client_info": {
+          "package_name": "com.example.clothesday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048664151833-9i820dr9jv6oi3a5ecv2pehjgsk46b7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clothesday",
+            "certificate_hash": "ced65b111bc75b58d90a34bb17cd26ab70be5ef1"
+          }
+        },
+        {
+          "client_id": "1048664151833-h3kme8bimv5h7oh75cs7nr961hb742mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZFoOME55TbQPyPVIDVAqVwENhLWavlR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048664151833-h3kme8bimv5h7oh75cs7nr961hb742mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

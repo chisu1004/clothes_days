@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerview_search_result_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/recyclerview_search_result_month"
+        android:layout_width="53dp"
+        android:layout_height="30dp"
+        android:background="@drawable/post_month"
+        android:gravity="center"
+        android:text="3월"
+        android:textColor="#646CB7"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_search_result_profile_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_search_result_profile_name" />
+    <!-- 프로필사진 -->
+    <ImageView
+        android:id="@+id/recyclerview_search_result_profile_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/post_profile"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 프로필이름 -->
+    <TextView
+        android:id="@+id/recyclerview_search_result_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="9dp"
+        android:text="프로필 이름"
+        android:textAppearance="@style/noticeboard_profile_words"
+        app:layout_constraintStart_toEndOf="@+id/recyclerview_search_result_profile_picture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 스크랩아이콘 -->
+    <ImageView
+        android:id="@+id/recyclerview_search_result_scrap_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/recyclerview_search_result_viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="369dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_clothes_recommend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview_search_result_profile_picture" />
+
+    <LinearLayout
+        android:id="@+id/recyclerview_search_result_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerview_search_result_viewpager2" />
+
+    <TextView
+        android:id="@+id/recyclerview_search_result_content"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/post_con"
+        android:ems="10"
+        android:text="사용자가 하고 싶은 말"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_search_result_indicator"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

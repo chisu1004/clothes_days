@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/noticeboard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/layout">
+
+
+    <!-- 옷날°C 추천 게시판 -->
+    <TextView
+        android:id="@+id/noticeboard_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_horizontal|top"
+        android:text="옷날°C 추천 게시판"
+        android:textAppearance="@style/noticeboard_recommend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 좋아요 -->
+    <!-- 인기 게시글 -->
+    <View
+        android:id="@+id/post_like"
+        android:layout_width="34dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/post_like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeboard_recommend" />
+
+    <TextView
+        android:id="@+id/post_best_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-9sp"
+        android:text="@string/post_best_post"
+        android:textAppearance="@style/post_best_post"
+        app:layout_constraintStart_toEndOf="@+id/post_like"
+        app:layout_constraintTop_toTopOf="@+id/post_like" />
+
+
+        <!-- 인기 게시글 나오는 부분 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noticeboard_best_post_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_best_post" />
+
+        <!-- 모든 게시글 나오는 부분-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noticeboard_post_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/noticeboard_best_post_recyclerview"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeboard_best_post_recyclerview"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

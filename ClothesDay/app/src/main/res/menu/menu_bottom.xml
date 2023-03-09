@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:id="@+id/home_btn"
+        app:showAsAction="always|withText"
+         android:icon="@drawable/home_icon"
+         android:title="홈"   />
+    <item  android:id="@+id/search_btn"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/search_icon"
+        android:title="검색"
+    />
+    <item  android:id="@+id/noticeboard_btn"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/board_icon"
+        android:title="게시판"
+    />
+    <item  android:id="@+id/scrap_btn"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/scrap_icon"
+        android:title="스크랩"
+    />
+    <item  android:id="@+id/mypage_btn"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/mypage_icon"
+        android:title="마이페이지"
+    />
+</menu>

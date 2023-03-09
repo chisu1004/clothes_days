@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <!-- 게시판 이미지등록1 -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="360dp"
+        android:height="398dp"
+        android:viewportWidth="360"
+        android:viewportHeight="398"
+        >
+
+        <group>
+
+            <clip-path
+                android:pathData="M0 0H360V398H0V0Z"
+                />
+
+            <path
+                android:pathData="M0 0V398H360V0"
+                android:fillColor="#BCC5DC"
+                />
+
+            <path
+                android:pathData="M0 0H360V398H0V0Z"
+                android:strokeWidth="2"
+                android:strokeColor="#FFFFFF"
+                />
+
+        </group>
+
+    </vector>
+</selector>

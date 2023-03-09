@@ -1,0 +1,113 @@
+<!-- 아이디 비번찾기 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/layout">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/find_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/find_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+
+            android:gravity="center_horizontal|top"
+            android:text="@string/app_name"
+            android:textAppearance="@style/app_name" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/find_pw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:gravity="top"
+        android:text="비밀번호 찾기"
+        android:layout_marginStart="6dp"
+        android:textAppearance="@style/find_id"
+        app:layout_constraintBottom_toTopOf="@id/find_pw_back"
+
+        app:layout_constraintStart_toStartOf="@+id/find_pw_back"
+        app:layout_constraintTop_toBottomOf="@+id/find_toolbar" />
+
+    <View
+        android:id="@+id/find_pw_back"
+        android:layout_width="328dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/find_id_back"
+        app:layout_constraintBottom_toBottomOf="@+id/find_pw_input_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_pw_text"
+    />
+
+    <TextView
+        android:id="@+id/find_pw_id"
+        android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:text="이메일"
+        android:textAppearance="@style/find_id_name"
+        app:layout_constraintEnd_toEndOf="@+id/find_pw_back"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="@+id/find_pw_back"
+        app:layout_constraintTop_toBottomOf="@+id/find_pw_text" />
+
+    <EditText
+        android:id="@+id/find_pw_input_id"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/find_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="7dp"
+        android:maxLength="30"
+        app:layout_constraintBottom_toBottomOf="@+id/find_pw_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_pw_id" />
+
+    <!-- 비번찾기 이메일 입력칸 -->
+
+
+    <!-- 비밀번호찾기버튼 -->
+
+
+    <Button
+        android:id="@+id/find_pw_btn"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/find_btn"
+        android:gravity="center"
+        android:text="비밀번호 찾기"
+        android:textAppearance="@style/find_btn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/find_pw_back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

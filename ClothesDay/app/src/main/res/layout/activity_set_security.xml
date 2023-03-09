@@ -1,0 +1,64 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/option_setprotect"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/option_setprotect">
+
+    <TextView
+        android:id="@+id/security_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="49dp"
+        android:gravity="top"
+        android:text="보안"
+        android:textAppearance="@style/option_setprotect_words"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 비밀번호 -->
+    <View
+        android:id="@+id/security_ine6"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/option_line6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/security_text" />
+
+    <TextView
+        android:id="@+id/security_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginStart="33dp"
+        android:gravity="top"
+        android:text="비밀번호 변경"
+        android:textAppearance="@style/set_secure_psw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/security_ine6" />
+
+    <!--    &lt;!&ndash; 로그인 활동 &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/set_privacy_log"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="29dp"-->
+<!--        android:layout_below="@+id/set_privacy_pwd"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginStart="33dp"-->
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:gravity="top"-->
+<!--        android:text="로그인 활동"-->
+<!--        android:textAppearance="@style/set_secure_psw" />-->
+
+    <!-- 보안 계정 확인 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MonthBoardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup
+        android:id="@+id/month_board_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/month_board_first_month"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:background="@drawable/month_radio_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="3월"
+            android:textAppearance="@style/category_text_active" />
+
+        <RadioButton
+            android:id="@+id/month_board_second_month"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:background="@drawable/month_radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="4월"
+            android:textAppearance="@style/category_text_inactive" />
+
+        <RadioButton
+            android:id="@+id/month_board_third_month"
+            android:layout_width="63dp"
+            android:layout_height="38dp"
+            android:background="@drawable/month_radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="5월"
+            android:textAppearance="@style/category_text_inactive" />
+
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/month_board_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="22dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/month_board_radio_group"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >

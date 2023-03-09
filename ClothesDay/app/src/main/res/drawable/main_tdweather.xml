@@ -1,0 +1,31 @@
+
+    <!-- 날씨 불러오기창 -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="360dp"
+        android:height="305dp"
+        android:viewportWidth="360"
+        android:viewportHeight="305"
+        >
+
+        <group>
+
+            <clip-path
+                android:pathData="M0 0H360V305H0V0Z"
+                />
+
+            <path
+                android:pathData="M0 0V305H360V0"
+                android:fillColor="#FFFFFF"
+                />
+
+            <path
+                android:pathData="M0 0H360V305H0V0Z"
+                android:strokeWidth="2"
+                android:strokeColor="#8AA0A4"
+                />
+
+        </group>
+
+</vector>

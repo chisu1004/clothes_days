@@ -1,0 +1,149 @@
+<!-- 설정_내정보 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/option_myinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/option_myinfo">
+
+    <!-- 프로필사진 -->
+    <ImageView
+        android:id="@+id/set_my_info_profile_picture"
+        android:layout_width="161dp"
+        android:layout_height="158dp"
+       android:layout_marginTop="41dp"
+        android:background="@drawable/menu_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- 프로필 이름 -->
+    <TextView
+        android:id="@+id/set_my_info_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필 이름"
+        android:layout_marginTop="25dp"
+        android:textAppearance="@style/option_profile_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_my_info_profile_picture" />
+
+
+    <!-- 저장 -->
+    <Button
+        android:id="@+id/set_my_info_save_button"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:text="저장"
+        android:textAppearance="@style/set_my_info_save_button"
+        android:background="@drawable/set_my_info_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 이메일 -->
+
+
+    <!-- 내 문의/건의 사항 -->
+<!--    <TextView-->
+<!--        android:id="@+id/option_myinquiry"-->
+<!--        android:layout_width="111dp"-->
+<!--        android:layout_height="18dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="9dp"-->
+<!--        android:layout_marginTop="639dp"-->
+<!--        android:gravity="top"-->
+<!--        android:text="내 문의/건의 사항"-->
+<!--        android:textAppearance="@style/option_myinquiry" />-->
+<!--    &lt;!&ndash; 내 문의/건의 사항 모음 &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/option_myinquiry_collection"-->
+<!--        android:layout_width="142dp"-->
+<!--        android:layout_height="18dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="9dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="669dp"-->
+<!--        android:text="내 문의/건의 사항 모음"-->
+<!--        android:textAppearance="@style/option_myinquiry_collection"-->
+<!--        android:gravity="top" />-->
+<!--    &lt;!&ndash; Line 2 &ndash;&gt;-->
+<!--    <View-->
+<!--        android:id="@+id/option_line2"-->
+<!--        android:layout_width="348.01dp"-->
+<!--        android:layout_height="6dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="6dp"-->
+<!--        android:layout_marginTop="691dp"-->
+<!--        android:background="@drawable/option_line2" />-->
+<!--    &lt;!&ndash; 회원정보를 삭제하시겠어요? &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/option_withdrawal_words"-->
+<!--        android:layout_width="142dp"-->
+<!--        android:layout_height="15dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="18dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="740dp"-->
+<!--        android:text="회원정보를 삭제하시겠어요?"-->
+<!--        android:textAppearance="@style/option_withdrawal_words"-->
+<!--        android:gravity="top" />-->
+    <!-- 회원 탈퇴 -->
+    <TextView
+        android:id="@+id/set_my_info_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity= "top"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="9dp"
+        android:text="이메일"
+        android:textAppearance="@style/set_my_info_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_my_info_profile_name" />
+
+
+    <!-- gkrqjs@g.seoil.ac.kr -->
+
+
+    <TextView
+        android:id="@+id/set_my_info_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:gravity="top"
+        android:text="이메일"
+        android:textAppearance="@style/set_my_info_text"
+        app:layout_constraintStart_toStartOf="@+id/set_my_info_email_text"
+        app:layout_constraintTop_toBottomOf="@+id/set_my_info_email_text" />
+
+    <!-- Line 10 -->
+
+    <View
+        android:id="@+id/set_my_info_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/set_my_info_line"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_my_info_email" />
+
+    <TextView
+        android:id="@+id/set_my_info_member_withdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="top"
+        android:text="회원 탈퇴"
+        android:textAppearance="@style/option_withdrawal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

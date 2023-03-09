@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+
+    android:background="@drawable/layout">
+
+    <!-- 프로필사진 -->
+    <ImageView
+        android:id="@+id/recycler_follow_profile_picture"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/follow_profile_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 프로필이름 -->
+    <TextView
+        android:id="@+id/recycler_follow_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:gravity="left"
+        android:lineSpacingExtra="6sp"
+        android:text="프로필 이름"
+        android:textAppearance="@style/noticeboard_profile_words"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_follow_profile_picture"
+        app:layout_constraintStart_toEndOf="@+id/recycler_follow_profile_picture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/recycler_follow_follow_btn"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:background="@drawable/follow_back"
+        android:text="팔로잉"
+        android:layout_marginEnd="31dp"
+        android:textAppearance="@style/follow_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,260 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/layout">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/register_lottie_animation"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:lottie_loop="true"
+
+        app:lottie_rawRes="@raw/loading"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 회원가입 -->
+    <TextView
+        android:id="@+id/register_register_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginStart="33dp"
+        android:gravity="top"
+        android:text="회원가입"
+        android:textAppearance="@style/find_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/register_nickname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="닉네임"
+        android:textAppearance="@style/signup_text"
+        app:layout_constraintStart_toStartOf="@+id/register_nickname_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_register_Text" />
+    <!-- 닉네임 입력칸 -->
+    <EditText
+        android:id="@+id/register_nickname_input"
+        android:layout_width="323dp"
+        android:layout_height="25dp"
+          android:layout_marginTop="2dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/input"
+        android:inputType="textPersonName"
+        android:maxLength="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname_text" />
+
+
+
+    <!--    &lt;!&ndash; 이메일 &ndash;&gt;-->
+    <TextView
+        android:id="@+id/register_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:gravity="top"
+        android:text="이메일"
+        android:textAppearance="@style/signup_text"
+        app:layout_constraintStart_toStartOf="@+id/register_nickname_text"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname_input" />
+
+    <!-- 이메일 중복확인 -->
+
+    <!-- 중복확인 -->
+    <Button
+        android:id="@+id/register_nick_check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00FF0000"
+        android:text="닉네임 중복확인"
+        android:textAppearance="@style/signup_id_check"
+        app:layout_constraintBottom_toTopOf="@+id/register_nickname_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_id_check_btn"
+        app:layout_constraintTop_toTopOf="@+id/register_nickname_text" />
+
+    <TextView
+        android:id="@+id/register_nick_check_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="4dp"
+        android:gravity="top"
+        android:text="사용 가능한 닉네임 입니다."
+        android:textAppearance="@style/signup_id_check_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/register_nickname_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_nickname_input" />
+
+    <!--    &lt;!&ndash; 아이디입력 &ndash;&gt;-->
+    <EditText
+        android:id="@+id/register_id_input"
+        android:layout_width="323dp"
+        android:layout_height="25dp"
+        android:background="@null"
+        android:layout_marginTop="2dp"
+        android:drawableBottom="@drawable/input"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_id_text" />
+
+        <!-- 이메일 중복확인 -->
+    <Button
+        android:id="@+id/register_id_check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00FF0000"
+        android:text="이메일 인증번호 전송"
+        android:textAppearance="@style/signup_id_check"
+        app:layout_constraintBottom_toTopOf="@+id/register_id_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_id_input"
+        app:layout_constraintTop_toTopOf="@+id/register_id_text" />
+    <!-- 중복확인 -->
+    <TextView
+        android:id="@+id/register_id_check_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="4dp"
+        android:gravity="top"
+        android:text="사용 가능한 이메일 입니다. 잠시 후 메일함을 확인해 주세요."
+        android:textAppearance="@style/signup_id_check_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/register_id_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_id_input" />
+
+
+        <!-- 인증코드 확인 -->
+
+    <Button
+        android:id="@+id/register_id_verify_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00FF0000"
+        android:gravity="center_horizontal|top"
+        android:text="인증코드 확인"
+        android:textAppearance="@style/signup_id_check"
+        app:layout_constraintBottom_toTopOf="@+id/register_verify_input"
+        app:layout_constraintEnd_toEndOf="@+id/register_id_check_btn"
+        app:layout_constraintTop_toTopOf="@+id/register_verify_text" />
+    <!-- 인증코드 -->
+    <TextView
+        android:id="@+id/register_verify_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="46dp"
+        android:gravity="top"
+        android:text="인증코드"
+        android:textAppearance="@style/signup_text"
+        app:layout_constraintStart_toStartOf="@+id/register_id_text"
+        app:layout_constraintTop_toBottomOf="@+id/register_id_input" />
+    <!-- 인증코드 입력  -->
+    <EditText
+        android:id="@+id/register_verify_input"
+        android:layout_width="323dp"
+        android:layout_height="25dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/input"
+        android:maxLength="15"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_verify_text" />
+        <!-- 인증확인 텍스트  -->
+    <TextView
+        android:id="@+id/register_verify_complete_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="4dp"
+        android:gravity="top"
+        android:text="이메일 인증이 완료되었습니다."
+        android:textAppearance="@style/signup_id_check_text"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/register_verify_input"
+        app:layout_constraintTop_toBottomOf="@+id/register_verify_input" />
+
+        <!-- 비밀번호  -->
+    <TextView
+        android:id="@+id/register_pw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:gravity="top"
+        android:text="비밀번호"
+        android:textAppearance="@style/signup_text"
+        app:layout_constraintStart_toStartOf="@+id/register_verify_text"
+        app:layout_constraintTop_toBottomOf="@+id/register_verify_input" />
+
+        <!-- 비번 입력 -->
+    <EditText
+        android:id="@+id/register_pw_input"
+        android:layout_width="323dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/input"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pw_text" />
+
+
+    <TextView
+        android:id="@+id/register_pw_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:gravity="top"
+        android:text="비밀번호 확인"
+        android:textAppearance="@style/signup_text"
+        app:layout_constraintStart_toStartOf="@+id/register_pw_text"
+        app:layout_constraintTop_toBottomOf="@+id/register_pw_input" />
+
+
+    <EditText
+        android:id="@+id/register_pw_input2"
+        android:layout_width="323dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/input"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pw_text2" />
+
+
+        <!-- 가입하기 버튼 -->
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="95dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/signup_btn"
+        android:text="가입하기"
+        android:textAppearance="@style/signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pw_input2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

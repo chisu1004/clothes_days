@@ -1,0 +1,163 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/layout">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:background="@drawable/weather_background"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/main_lottie_animation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/main_weather_icon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main_weather_icon"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
+
+
+        <ImageView
+            android:id="@+id/main_weather_icon"
+            android:layout_width="139dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="110dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/main_weather_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/find"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 기온 -->
+        <TextView
+            android:id="@+id/main_weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="17dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/find"
+            android:textSize="40dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_weather_icon" />
+
+
+        <TextView
+            android:id="@+id/main_weather_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textAppearance="@style/find"
+
+            android:textSize="18dp"
+            app:layout_constraintEnd_toStartOf="@id/main_weather_high"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_weather_temp" />
+
+        <TextView
+            android:id="@+id/main_weather_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+
+            android:textAppearance="@style/find"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/main_weather_rainper"
+            app:layout_constraintTop_toTopOf="@+id/main_weather_low" />
+
+
+        <TextView
+            android:id="@+id/main_weather_rainper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textAppearance="@style/find"
+            android:textSize="18dp"
+
+
+            app:layout_constraintEnd_toStartOf="@+id/main_weather_humidity"
+            app:layout_constraintStart_toEndOf="@+id/main_weather_high"
+            app:layout_constraintTop_toTopOf="@+id/main_weather_low" />
+
+        <TextView
+            android:id="@+id/main_weather_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textAppearance="@style/find"
+            android:textSize="18dp"
+
+            app:layout_constraintEnd_toStartOf="@+id/main_weather_rainper"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toEndOf="@id/main_weather_low"
+            app:layout_constraintTop_toTopOf="@+id/main_weather_low" />
+
+        <TextView
+            android:id="@+id/main_weather_get_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:text="날씨 정보를 불러오는중..."
+            android:gravity="center"
+            android:textSize="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_lottie_animation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_fragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

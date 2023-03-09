@@ -1,0 +1,492 @@
+<!-- 메뉴 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/menu">
+
+
+    <!-- 프로필사진 -->
+    <ImageView
+        android:id="@+id/menu_profile_picture"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/menu_profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- 프로필 이름 -->
+    <TextView
+        android:id="@+id/menu_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="35dp"
+        android:text="닉네임"
+        android:textAppearance="@style/menu_profile_name"
+        app:layout_constraintStart_toEndOf="@+id/menu_profile_picture"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- 사용자 이메일 -->
+    <TextView
+        android:id="@+id/menu_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="top"
+        android:text="사용자 이메일"
+        android:textAppearance="@style/menu_email"
+        app:layout_constraintStart_toStartOf="@+id/menu_profile_name"
+        app:layout_constraintTop_toBottomOf="@+id/menu_profile_name" />
+
+
+    <TextView
+        android:id="@+id/menu_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/menu_option_set"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="14dp"
+
+        android:gravity="top"
+        android:text="알람"
+        android:textAppearance="@style/menu_alarm"
+        app:layout_constraintEnd_toStartOf="@+id/menu_option_set"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menu_option_set"
+        android:layout_width="26dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/option_set"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_noticeboard_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:text="게시판"
+        android:textAppearance="@style/main_post2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_email" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/menu_middle_layout"
+        app:layout_constraintTop_toBottomOf="@+id/menu_noticeboard_text" >
+
+
+        <TextView
+            android:id="@+id/menu_spring_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp"
+            android:gravity="center_horizontal|top"
+            android:text="봄"
+            android:textAppearance="@style/menu_season_words"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_spring_words1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:text="3월 11° / 1°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toEndOf="@+id/menu_spring_words"
+            app:layout_constraintTop_toTopOf="@+id/menu_spring_words" />
+
+        <View
+            android:id="@+id/menu_line1"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_spring_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_spring_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_spring_words1" />
+
+        <TextView
+            android:id="@+id/menu_spring_words2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="4월 18° / 7°"
+            android:layout_marginStart="61dp"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toEndOf="@+id/menu_spring_words1"
+            app:layout_constraintTop_toTopOf="@+id/menu_spring_words1" />
+
+        <View
+            android:id="@+id/menu_line2"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_spring_words2"
+            app:layout_constraintStart_toStartOf="@+id/menu_spring_words2"
+            app:layout_constraintTop_toBottomOf="@+id/menu_spring_words2" />
+
+        <TextView
+            android:id="@+id/menu_spring_words3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="34dp"
+            android:gravity="top"
+            android:text="5월 23° / 13°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_spring_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_spring_words1" />
+
+        <View
+            android:id="@+id/menu_line3"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_spring_words3"
+            app:layout_constraintStart_toStartOf="@+id/menu_spring_words3"
+            app:layout_constraintTop_toBottomOf="@+id/menu_spring_words3" />
+
+        <View
+            android:id="@+id/menu_line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/menu_middle_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_line3" />
+
+
+
+
+        <TextView
+            android:id="@+id/menu_summer_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp"
+            android:gravity="top"
+            android:text="여름"
+            android:textAppearance="@style/menu_season_words"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_line_2" />
+
+        <TextView
+            android:id="@+id/menu_summer_words1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:text="6월 27° / 18°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_spring_words1"
+            app:layout_constraintTop_toTopOf="@+id/menu_summer_words" />
+         6월
+
+        <View
+            android:id="@+id/menu_line4"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_summer_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_summer_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_summer_words1" />
+            <!--7월 29° / 22° -->
+        <TextView
+            android:id="@+id/menu_summer_words2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:text="7월 29° / 22°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_spring_words2"
+            app:layout_constraintTop_toTopOf="@+id/menu_summer_words1" />
+
+        <View
+            android:id="@+id/menu_line5"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_summer_words2"
+            app:layout_constraintStart_toStartOf="@+id/menu_summer_words2"
+            app:layout_constraintTop_toBottomOf="@+id/menu_summer_words2" />
+            <!-- 8월 30° / 22° -->
+        <TextView
+            android:id="@+id/menu_summer_words3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:gravity="top"
+            android:text="8월 30° / 22°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_summer_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_summer_words1" />
+
+        <View
+            android:id="@+id/menu_line6"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_summer_words3"
+            app:layout_constraintStart_toStartOf="@+id/menu_summer_words3"
+            app:layout_constraintTop_toBottomOf="@+id/menu_summer_words3" />
+
+        <View
+            android:id="@+id/menu_line_3"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/menu_middle_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_summer_words3" />
+
+<!--    <View-->
+<!--        android:id="@+id/menu_line_4"-->
+<!--        android:layout_width="360.05dp"-->
+<!--        android:layout_height="6dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="1dp"-->
+<!--        android:layout_marginTop="355dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:background="@drawable/menu_line2" />-->
+
+        <TextView
+            android:id="@+id/menu_fall_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp"
+            android:gravity="top"
+            android:text="가을"
+            android:textAppearance="@style/menu_season_words"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_line_3" />
+        <!-- 9월 26° / 16°-->
+        <TextView
+            android:id="@+id/menu_fall_words1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:text="9월 26° / 16°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_summer_words3"
+            app:layout_constraintTop_toTopOf="@+id/menu_fall_words" />
+        <!--    &lt;!&ndash; 9월 &ndash;&gt;-->
+        <View
+            android:id="@+id/menu_line7"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_fall_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_fall_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_fall_words1" />
+        <!--    &lt;!&ndash; 10월 20° / 9°&ndash;&gt;-->
+        <TextView
+            android:id="@+id/menu_fall_words2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:text="10월 20° / 9°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_summer_words2"
+            app:layout_constraintTop_toTopOf="@+id/menu_fall_words1" />
+            <!-- 10월 -->
+        <View
+            android:id="@+id/menu_line8"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_fall_words2"
+            app:layout_constraintStart_toStartOf="@+id/menu_fall_words2"
+            app:layout_constraintTop_toBottomOf="@+id/menu_fall_words2" />
+        <!-- 11월 12° / 2°-->
+        <TextView
+            android:id="@+id/menu_fall_words3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginTop="34dp"
+            android:text="11월 12° / 2°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_fall_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_fall_words1" />
+        <!-- 11월 -->
+        <View
+            android:id="@+id/menu_line9"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_fall_words3"
+            app:layout_constraintStart_toStartOf="@+id/menu_fall_words3"
+            app:layout_constraintTop_toBottomOf="@+id/menu_fall_words3" />
+
+         겨울
+
+        <View
+            android:id="@+id/menu_line_4"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/menu_middle_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_fall_words3" />
+
+        <TextView
+            android:id="@+id/menu_winter_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:gravity="top"
+            android:text="겨울"
+            android:textAppearance="@style/menu_season_words"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_line_4" />
+        <!-- 12월 4° / -5°-->
+        <TextView
+            android:id="@+id/menu_winter_words1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:text="12월 4° / -5°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_fall_words3"
+            app:layout_constraintTop_toTopOf="@+id/menu_winter_words" />
+        <!-- 12월 -->
+        <View
+            android:id="@+id/menu_line10"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_winter_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_winter_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_winter_words1" />
+        <!-- 1월 2° / -7°-->
+        <TextView
+            android:id="@+id/menu_winter_words2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="1월 2° / -7°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_fall_words2"
+            app:layout_constraintTop_toTopOf="@+id/menu_winter_words1" />
+        <!-- 1월 -->
+        <View
+            android:id="@+id/menu_line11"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_winter_words2"
+            app:layout_constraintStart_toStartOf="@+id/menu_winter_words2"
+            app:layout_constraintTop_toBottomOf="@+id/menu_winter_words2" />
+        <!-- 2월 5° / -5°-->
+        <TextView
+            android:id="@+id/menu_winter_words3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:gravity="top"
+            android:text="2월 5° / -5°"
+            android:textAppearance="@style/menu_words1"
+            app:layout_constraintStart_toStartOf="@+id/menu_winter_words1"
+            app:layout_constraintTop_toBottomOf="@+id/menu_winter_words1" />
+        <!-- 2월 -->
+        <View
+            android:id="@+id/menu_line12"
+            android:layout_width="114dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/menu_line1"
+            app:layout_constraintEnd_toEndOf="@+id/menu_line10"
+            app:layout_constraintStart_toStartOf="@+id/menu_line10"
+            app:layout_constraintBottom_toBottomOf="@id/menu_middle_layout"
+            app:layout_constraintTop_toBottomOf="@+id/menu_winter_words3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Line 2 -->
+    <!-- 옷날게시판 line -->
+    <!--    <View-->
+    <!--        android:id="@+id/menu_line_6"-->
+    <!--        android:layout_width="360.05dp"-->
+    <!--        android:layout_height="6dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginStart="18dp"-->
+    <!--        android:layout_marginLeft="1dp"-->
+    <!--        android:layout_marginTop="571dp"-->
+    <!--        android:layout_marginEnd="1dp"-->
+    <!--        android:background="@drawable/menu_line2" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/menu_line13"-->
+    <!--        android:layout_width="223.5dp"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:layout_below="@+id/menu_line_6"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_marginStart="27dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="55dp"-->
+    <!--        android:background="@drawable/menu_line3" />-->
+    <!--    &lt;!&ndash; 채팅방 line &ndash;&gt;-->
+    <!--    <View-->
+    <!--        android:id="@+id/menu_line14"-->
+    <!--        android:layout_width="223.5dp"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:layout_below="@+id/menu_line13"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_marginStart="27dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:background="@drawable/menu_line3" />-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

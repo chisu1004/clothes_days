@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 1위 게시글 -->
+
+    <View
+        android:id="@+id/best_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/best_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/best_post_rank"
+        android:layout_width="138dp"
+        android:layout_height="39dp"
+
+        android:gravity="center_horizontal|top"
+        android:text="@string/best_pnumber1"
+        android:textAppearance="@style/best_pnumber1"
+        app:layout_constraintBottom_toBottomOf="@+id/best_background"
+        app:layout_constraintStart_toStartOf="@+id/best_background"
+        app:layout_constraintTop_toTopOf="@+id/best_background" />
+
+
+    <ImageView
+        android:id="@+id/best_profile_picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/post_profile"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/best_background"
+        app:layout_constraintEnd_toStartOf="@+id/best_profile_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 프로필 이름1 -->
+
+    <TextView
+        android:id="@+id/best_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+          android:layout_marginEnd="13dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-9sp"
+        android:text="@string/post_profile_words1"
+        android:textAppearance="@style/post_profile_words1"
+        app:layout_constraintBottom_toBottomOf="@+id/best_background"
+        app:layout_constraintEnd_toEndOf="@+id/best_background"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

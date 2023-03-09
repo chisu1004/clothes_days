@@ -1,0 +1,101 @@
+<!-- 설정_알림 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/option_notice"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/option_notice">
+    <!-- 알림 -->
+    <TextView
+        android:id="@+id/set_notice_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="27dp"
+        android:gravity="top"
+        android:text="알림"
+        android:textAppearance="@style/option_notice_words"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Line 4 -->
+    <View
+        android:id="@+id/set_notice_line4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/option_line4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_notice_words" />
+
+        <!-- 앱 알림 -->
+    <TextView
+        android:id="@+id/set_notice_app_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="23dp"
+        android:gravity="top"
+        android:text="앱 알림"
+        android:textAppearance="@style/app_notice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_notice_line4" />
+
+        <!-- 기온별 아이템 알림, 날씨와 관련된 주의보-경보 알림 -->
+    <TextView
+        android:id="@+id/set_notice_comments1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="7dp"
+        android:gravity="top"
+        android:text="기온별 아이템 알림, 날씨와 관련된 정보 알림"
+        android:textAppearance="@style/notice_comments1"
+        app:layout_constraintStart_toStartOf="@+id/set_notice_app_notice"
+        app:layout_constraintTop_toBottomOf="@+id/set_notice_app_notice" />
+
+    <Switch
+        android:id="@+id/set_notice_weather_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/set_notice_app_notice"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 팔로우 알림 -->
+    <TextView
+        android:id="@+id/set_notice_follow_notice"
+        android:layout_width="117dp"
+        android:layout_height="29dp"
+        android:gravity="top"
+        android:text="팔로우 알림"
+        android:layout_marginTop="55dp"
+        android:textAppearance="@style/follow_notice"
+        app:layout_constraintStart_toStartOf="@+id/set_notice_app_notice"
+        app:layout_constraintTop_toBottomOf="@+id/set_notice_comments1" />
+
+        <!-- 내가 팔로우한 사람의 게시글 등록 알림 -->
+    <TextView
+        android:id="@+id/set_notice_follow_comments"
+        android:layout_width="241dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="7dp"
+        android:gravity="top"
+        android:text="내가 팔로우한 사람의 게시글 등록 알림"
+        android:textAppearance="@style/follow_comments"
+        app:layout_constraintStart_toStartOf="@+id/set_notice_follow_notice"
+        app:layout_constraintTop_toBottomOf="@+id/set_notice_follow_notice" />
+
+    <Switch
+        android:id="@+id/set_notice_follow_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/set_notice_follow_notice"
+        app:layout_constraintEnd_toEndOf="@+id/set_notice_weather_switch"
+        app:layout_constraintStart_toStartOf="@+id/set_notice_weather_switch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report">
+        <item>욕설/비하</item>
+        <item>도배</item>
+        <item>음란물 유포</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

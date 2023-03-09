@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spring">
+        <item>3월</item>
+        <item>4월</item>
+        <item>5월</item>
+    </string-array>
+
+    <string-array name="summer">
+        <item>6월</item>
+        <item>7월</item>
+        <item>8월</item>
+    </string-array>
+
+    <string-array name="fall">
+        <item>9월</item>
+        <item>10월</item>
+        <item>11월</item>
+    </string-array>
+
+    <string-array name="winter">
+        <item>12월</item>
+        <item>1월</item>
+        <item>2월</item>
+    </string-array>
+
+</resources>
